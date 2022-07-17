@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+    - name: creating file
+      file: 
+        path: /opt/file1
+        state: touch

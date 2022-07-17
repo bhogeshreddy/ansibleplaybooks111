@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+   - name: creaing multiple  files
+     file:
+       path: /opt/{{item}}
+       state: touch
+     with_items:
+     - HTML
+     - CSS
+     - JAVASCRIPT
